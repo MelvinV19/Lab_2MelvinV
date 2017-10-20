@@ -11,7 +11,9 @@ public class Lab2_MelvinVargas {
         ArrayList maestros = new ArrayList();
         ArrayList clases = new ArrayList();
         ArrayList alumno = new ArrayList();
+        ArrayList logueado=new ArrayList();
         Maestros m = new Maestros();
+        alumnos a=new alumnos();
         Clases c = new Clases();
         while (!opcion.equals("e")) {
             opcion = JOptionPane.showInputDialog(""
@@ -69,16 +71,17 @@ public class Lab2_MelvinVargas {
                             opcionma = JOptionPane.showInputDialog(""
                                     + "a-Maestro\n"
                                     + "b-alumno\n"
+                                    + "c-volver\n"
                             );
                             if (opcionma.equals("a")) {
                                 String usuario = JOptionPane.showInputDialog("Ingrese nombre de usuario");
-                                for (int i = 0; i < maestros.size(); i++) {
-                                   if(maestros.get(i).equals(m.getUsuario())){
-                                       String contrasena = JOptionPane.showInputDialog("Ingrese contrasena");
-                                       if(maestros.get(i).equals(m.getContrasena())){
-                                           JOptionPane.showMessageDialog(null,"Felicidades se ha logueado exitosamente");
-                                       }
-                                   }
+                                String pass=JOptionPane.showInputDialog("Ingrese su contrasena");
+                                for (Object t : maestros) {
+                                    if(((Maestros)t).getUsuario().equals(usuario)&&((Maestros)t).getContrasena().equals(pass)){
+                                        m=(Maestros)t;
+                                    }else{
+                                        logueado.add(t);
+                                    }
                                 }
                                 
                             }
