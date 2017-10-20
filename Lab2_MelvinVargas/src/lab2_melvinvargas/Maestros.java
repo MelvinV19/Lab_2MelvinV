@@ -6,7 +6,7 @@ public class Maestros {
     String nombre;
     String titulo;
     String maestria;
-    String salario;
+    double salario;
     String usuario;
     String contrasena;
     String cantidad;
@@ -14,7 +14,7 @@ public class Maestros {
     public Maestros() {
     }
 
-    public Maestros(String nombre, String titulo, String maestria, String salario, String usuario, String contrasena,String cantidad) {
+    public Maestros(String nombre, String titulo, String maestria, double salario, String usuario, String contrasena,String cantidad) {
         this.nombre = nombre;
         this.titulo = titulo;
         this.maestria = maestria;
@@ -48,11 +48,11 @@ public class Maestros {
         this.maestria = maestria;
     }
 
-    public String getSalario() {
+    public double getSalario() {
         return salario;
     }
 
-    public void setSalario(String salario) {
+    public void setSalario(double salario) {
         this.salario = salario;
     }
 
