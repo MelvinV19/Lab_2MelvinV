@@ -38,10 +38,8 @@ public class Lab2_MelvinVargas {
                 }
             }
             if (opcion.equals("b")) {
-                int posicion=Integer.parseInt("Ingrese posicion del alumno");
-                for (Object t : alumno) {
-                   
-                }
+               
+                System.out.println(alumno);
                         
             }
             if (opcion.equals("c")) {
@@ -57,15 +55,11 @@ public class Lab2_MelvinVargas {
                         String numeroc = JOptionPane.showInputDialog("Ingrese numero de cuenta");
                         String carrera = JOptionPane.showInputDialog("Ingrese carrera que estudia");
                         int edad = Integer.parseInt(JOptionPane.showInputDialog("Ingrese su edad"));
-                        double dinero = Double.parseDouble("Ingrese el dinero que tiene");
+                        double dinero = Double.parseDouble(JOptionPane.showInputDialog("Ingrese el dinero que tiene"));
                         String user = JOptionPane.showInputDialog("Ingrese su usuario");
                         String contrasena = JOptionPane.showInputDialog("Ingrese su contrasena");
-                        int cursando = Integer.parseInt("Ingrese clases cursando");
-                        String clasescur = ""; 
-                        for (int i = 1; i <= cursando; i++) {
-                            clasescur += JOptionPane.showInputDialog("Ingrese seccion de " + i + " clase que esta cursando " + " ");
-
-                        }
+                        int cursando = Integer.parseInt(JOptionPane.showInputDialog("Ingrese clases cursando"));
+                        String clasescur = JOptionPane.showInputDialog("Ingrese el codigo de sus clases separado por comas"); 
                         alumno.add(new alumnos(nombrea, numeroc, carrera, edad, dinero, user, contrasena, clasescur));
                     }
 

@@ -89,6 +89,11 @@ public class alumnos {
     public void setClasescur(String clasescur) {
         this.clasescur = clasescur;
     }
+
+    @Override
+    public String toString() {
+        return "alumnos{" + "nombrea=" + nombrea + ", numeroc=" + numeroc + ", carrera=" + carrera + ", edad=" + edad + ", dinero=" + dinero + ", usuario=" + usuario + ", contrasena=" + contrasena + ", clasescur=" + clasescur + '}';
+    }
     
     
 }
