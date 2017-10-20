@@ -86,7 +86,15 @@ public class Lab2_MelvinVargas {
                                 
                             }
                             if (opcionma.equals("b")) {
-                                
+                                String usuario = JOptionPane.showInputDialog("Ingrese nombre de usuario");
+                                String pass=JOptionPane.showInputDialog("Ingrese su contrasena");
+                                for (Object t : alumno) {
+                                    if(((alumnos)t).getUsuario().equals(usuario)&&((alumnos)t).getContrasena().equals(pass)){
+                                        a=(alumnos)t;
+                                    }else{
+                                        logueado.add(t);
+                                    }
+                                }
                             }
                         }
                     }
