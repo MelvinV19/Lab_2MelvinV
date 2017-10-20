@@ -5,14 +5,14 @@ package lab2_melvinvargas;
 public class Clases {
    String nombre;
    String seccion;
-   int alumnos;
+   String alumnos;
    String maestro;
-   int uv;
+   String  uv;
 
     public Clases() {
     }
 
-    public Clases(String nombre, String seccion, int alumnos, String maestro, int uv) {
+    public Clases(String nombre, String seccion, String alumnos, String maestro, String uv) {
         this.nombre = nombre;
         this.seccion = seccion;
         this.alumnos = alumnos;
@@ -36,11 +36,11 @@ public class Clases {
         this.seccion = seccion;
     }
 
-    public int getAlumnos() {
+    public String getAlumnos() {
         return alumnos;
     }
 
-    public void setAlumnos(int alumnos) {
+    public void setAlumnos(String alumnos) {
         this.alumnos = alumnos;
     }
 
@@ -52,12 +52,19 @@ public class Clases {
         this.maestro = maestro;
     }
 
-    public int getUv() {
+    public String getUv() {
         return uv;
     }
 
-    public void setUv(int uv) {
+    public void setUv(String uv) {
         this.uv = uv;
     }
-   
+
+    @Override
+    public String toString() {
+        return "Clases: " + "nombre=" + nombre + ", seccion=" + seccion + ", alumnos=" + alumnos + ", maestro=" + maestro + ", uv=" + uv + "||";
+    }
+
+    
+    
 }

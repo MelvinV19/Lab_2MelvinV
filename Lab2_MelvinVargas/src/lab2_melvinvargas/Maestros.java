@@ -79,11 +79,13 @@ public class Maestros {
     public void setCantidad(String cantidad) {
         this.cantidad = cantidad;
     }
-    
 
     @Override
     public String toString() {
-        return "Maestros: " + "nombre=" + nombre + ", usuario=" + usuario + ", contrasena=" + contrasena + "||";
+        return "Maestro: " + "nombre=" + nombre + ", titulo=" + titulo + ", maestria=" + maestria + ", salario=" + salario + ", usuario=" + usuario + ", contrasena=" + contrasena + ", cantidad=" + cantidad + "||";
     }
+    
+
+    
     
 }
