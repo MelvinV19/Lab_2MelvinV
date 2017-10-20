@@ -38,9 +38,11 @@ public class Lab2_MelvinVargas {
                 }
             }
             if (opcion.equals("b")) {
-                for (int i = 0; i < alumno.size(); i++) {
-                    
+                int posicion=Integer.parseInt("Ingrese posicion del alumno");
+                for (Object t : alumno) {
+                   
                 }
+                        
             }
             if (opcion.equals("c")) {
                 String opcionc = "";
