@@ -72,19 +72,18 @@ public class Lab2_MelvinVargas {
                             );
                             if (opcionma.equals("a")) {
                                 String usuario = JOptionPane.showInputDialog("Ingrese nombre de usuario");
-                                int bandera = 0;
-
-                                if (bandera == 0) {
-                                    for (int i = 0; i < maestros.size(); i++) {
-
-                                    }
+                                for (int i = 0; i < maestros.size(); i++) {
+                                   if(maestros.get(i).equals(m.getUsuario())){
+                                       String contrasena = JOptionPane.showInputDialog("Ingrese contrasena");
+                                       if(maestros.get(i).equals(m.getContrasena())){
+                                           JOptionPane.showMessageDialog(null,"Felicidades se ha logueado exitosamente");
+                                       }
+                                   }
                                 }
-                                String contrasena = JOptionPane.showInputDialog("Ingrese contrasena");
-
+                                
                             }
                             if (opcionma.equals("b")) {
-                                String usuario = JOptionPane.showInputDialog("Ingrese nombre de usuario");
-                                String contrasena = JOptionPane.showInputDialog("Ingrese contrasena");
+                                
                             }
                         }
                     }
